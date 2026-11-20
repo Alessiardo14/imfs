@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/image.js": {
+      "includeFiles": "{config,images}/**",
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "query", "key": "selector" }],
+      "destination": "/api/image"
+    }
+  ]
+}

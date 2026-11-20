@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Mixer</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    input, button { padding: .5rem; font-size: 1rem; }
+    img { max-width: 100%; margin-top: 1rem; background: repeating-conic-gradient(#ddd 0 25%, #fff 0 50%) 0 0/20px 20px; }
+    code { background: #eee; padding: 2px 4px; }
+  </style>
+</head>
+<body>
+  <h1>Image Mixer</h1>
+  <p>Uso: <code>/?selector=ejemplo1&amp;parameters=asd</code></p>
+  <p>
+    <input id="selector" placeholder="selector" value="ejemplo1">
+    <input id="parameters" placeholder="parameters" value="asd">
+    <button id="go">Probar</button>
+  </p>
+  <img id="out" alt="">
+  <script>
+    document.getElementById("go").onclick = () => {
+      const s = encodeURIComponent(document.getElementById("selector").value);
+      const p = encodeURIComponent(document.getElementById("parameters").value);
+      document.getElementById("out").src = `/?selector=${s}&parameters=${p}`;
+    };
+  </script>
+</body>
+</html>

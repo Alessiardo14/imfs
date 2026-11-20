@@ -1,0 +1,10 @@
+{
+  "width": 512,
+  "height": 512,
+  "fit": "fill",
+  "images": {
+    "a": "images/ejemplo1/circulo_amarillo.png",
+    "s": "images/ejemplo1/cuadrado_verde.png",
+    "d": "images/ejemplo1/fondo_rojo.png"
+  }
+}

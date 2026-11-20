@@ -1,0 +1,10 @@
+{
+  "width": 800,
+  "height": 400,
+  "fit": "cover",
+  "background": { "r": 255, "g": 255, "b": 255, "alpha": 1 },
+  "images": {
+    "a": "images/ejemplo2/sol.png",
+    "b": "images/ejemplo2/luna.png"
+  }
+}
